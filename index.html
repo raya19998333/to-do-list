@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>قائمة المهام - RAYA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <section class="card">
+      <header>
+        <h1>قائمة المهام - To Do</h1>
+        <p class="lead">أضف، شطب، وعدّل مهامك. تُحفظ محليًا في المتصفح.</p>
+      </header>
+
+      <div class="input-row">
+        <input id="taskInput" type="text" placeholder="اكتب مهمتك ثم اضغط إضافة أو Enter">
+        <button id="addBtn">إضافة</button>
+      </div>
+
+      <ul id="todoList" class="todo-list"></ul>
+
+      <div class="footer">
+        <div id="count">0 مهام</div>
+        <div class="filter">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="active">النشطة</button>
+          <button class="filter-btn" data-filter="completed">المكتملة</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
